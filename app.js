@@ -79,7 +79,7 @@
   ];
   const itemById = (id) => ITEMS.find((i) => i.id === id);
   const dispTitle = (it) => (it.type === 'pod' ? 'پادکست پلاستی‌وایز، ' + it.title : it.title);
-  const upload = (file, thumb) => encodeURI(UPLOAD_BASE + (thumb ? 'thumbs/' : '') + file);
+  const upload = (file, thumb) => /^https?:/.test(file) ? file : encodeURI(UPLOAD_BASE + (thumb ? 'thumbs/' : '') + file);
 
   /* ---------------------------------------------------------------
      نشان‌ها، سطح، شمارنده‌ها
@@ -486,7 +486,7 @@
     const recCls = rec.has(it.id) ? ' rec' : '';
     let top = '';
     if (it.type === 'info') {
-      top = `<div class="thumb"><img src="${upload(it.file, true)}" alt="اینفوگرافیک: ${it.title}" loading="lazy" width="300" height="375" onerror="this.closest('.thumb').classList.add('noimg');this.replaceWith(document.createTextNode('تصویر بارگذاری نشد'))"></div>`;
+      top = `<div class="thumb"><img referrerpolicy="no-referrer" src="${upload(it.file, true)}" alt="اینفوگرافیک: ${it.title}" loading="lazy" width="300" height="375" onerror="this.closest('.thumb').classList.add('noimg');this.replaceWith(document.createTextNode('تصویر بارگذاری نشد'))"></div>`;
     } else if (it.type === 'vid') {
       top = `<div class="cover ${coverClass(it)}"><span class="big">${icon('play')}</span><span class="tag">${it.dur}</span></div>`;
     } else if (it.type === 'pod') {
@@ -612,7 +612,7 @@
     openModal(`
       <h3 id="modalTitle">${it.title}</h3>
       <p class="meta">${it.sub}</p>
-      <img class="lightbox-img" src="${full}" alt="اینفوگرافیک: ${it.title}">
+      <img class="lightbox-img" referrerpolicy="no-referrer" src="${full}" alt="اینفوگرافیک: ${it.title}">
       <div class="modal-actions" style="margin-top:16px">
         ${doneButtonHTML(it.id)}
         <a class="btn btn-ghost" href="${full}" target="_blank" rel="noopener noreferrer">${icon('external')} باز کردن تصویر اصلی</a>
