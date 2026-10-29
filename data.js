@@ -261,11 +261,11 @@ const NO_NEED = [
 /* ---------- ۵) محتوای کتابخانه (لینک‌ها دقیقاً همان فایل‌های اصلی‌اند) ---------- */
 const UPLOAD_BASE = 'https://uploadkon.ir/uploads/';
 const INFOGRAPHICS = [
-  { id: 'info1', file: '93a812_26اینفو1.png', title: 'میکروپلاستیک چیست؟', sub: 'آشنایی سریع با ذرات پلاستیکی بسیار ریز', topics: ['basics'] },
-  { id: 'info2', file: '219812_26اینفو2.png', title: 'میکروپلاستیک چگونه وارد بدن ما می‌شود؟', sub: 'سه مسیر اصلی مواجهه در زندگی روزمره', topics: ['basics', 'water', 'food', 'air', 'cosmetics'] },
-  { id: 'info3', file: '0a3712_26اینفو3.png', title: 'اثرات میکروپلاستیک بر سلامت انسان', sub: 'آنچه تاکنون از مطالعات می‌دانیم', topics: ['health'] },
-  { id: 'info4', file: '18b212_26اینفو4.png', title: 'چگونه مواجههٔ خود را کم کنیم؟', sub: 'راهکارهای ساده و کاربردی در خانه', topics: ['actions', 'water', 'kitchen', 'food', 'textile', 'cosmetics', 'air'] },
-  { id: 'info5', file: '6ce012_26اینفو5.png', title: '۵ باور یا واقعیت؟', sub: 'اصلاح چند برداشت نادرست رایج', topics: ['myths', 'basics'] }
+  { id: 'info1', file: 'https://s6.uupload.ir/files/slide1_tmos.jpg', title: 'میکروپلاستیک چیست؟', sub: 'آشنایی سریع با ذرات پلاستیکی بسیار ریز', topics: ['basics'] },
+  { id: 'info2', file: 'https://s6.uupload.ir/files/slide2_hdd.jpg', title: 'میکروپلاستیک چگونه وارد بدن ما می‌شود؟', sub: 'سه مسیر اصلی مواجهه در زندگی روزمره', topics: ['basics', 'water', 'food', 'air', 'cosmetics'] },
+  { id: 'info3', file: 'https://s6.uupload.ir/files/slide3_i4ml.jpg', title: 'اثرات میکروپلاستیک بر سلامت انسان', sub: 'آنچه تاکنون از مطالعات می‌دانیم', topics: ['health'] },
+  { id: 'info4', file: 'https://s6.uupload.ir/files/slide4_3bch.jpg', title: 'چگونه مواجههٔ خود را کم کنیم؟', sub: 'راهکارهای ساده و کاربردی در خانه', topics: ['actions', 'water', 'kitchen', 'food', 'textile', 'cosmetics', 'air'] },
+  { id: 'info5', file: 'https://s6.uupload.ir/files/slide5_uusk.jpg', title: '۵ باور یا واقعیت؟', sub: 'اصلاح چند برداشت نادرست رایج', topics: ['myths', 'basics'] }
 ];
 
 const PODCAST_CREDIT = 'صدا: خانم زهرا سیفی، کارشناس ارشد آموزش و ارتقای سلامت';
